@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import 'bootstrap';
-import './assets/custom.scss'
+//import './assets/custom.scss'
 
 
 //Vue.config.productionTip = false
