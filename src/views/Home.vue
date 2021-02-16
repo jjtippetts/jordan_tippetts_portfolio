@@ -1,10 +1,10 @@
 <template lang="pug">
   div.h-100
-    div.container.d-flex.justify-content-center.py-4.navbar
-      a.px-4.mx-3.btn.btn-lg.btn-outline-primary.wiggle.nav-item(href="#about") about
-      a.px-4.mx-3.btn.btn-lg.btn-outline-primary.wiggle.nav-item(href="#projects") projects
-      a.px-4.mx-3.btn.btn-lg.btn-outline-primary.wiggle.nav-item(href="#contact") contact
-      button.px-4.mx-4.btn.btn-lg.btn-secondary.wiggle-horizontally Resume
+    div.d-flex.justify-content-center.navbar.container-fluid
+      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#about") about
+      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#projects") projects
+      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(data-bs-toggle="modal" data-bs-target="#contactModal") contact
+      a.btn.btn-lg.btn-secondary.wiggle-horizontally.px-4.m-4(href="./Jordan_Tippetts_Resume.pdf" target="_blank" rel="noopener") Resume
     main.container.pt-5
       div.row.h-100
         div.col.h-100.d-flex.flex-column.align-content-center.justify-content-center
@@ -39,25 +39,22 @@
               p.card-text {{project.description}}
               a.btn.btn-primary.px-5(v-bind:href="project.url" target="_blank" rel="noopener") Visit
 
-    section.container.pt-5
-      div.row
-        div.col
-          h2#contact.fw-bold Contact
-          hr
-          form
-            div.mb-3
-              label.form-label(for="email") Your Email
-              input#email.form-control(type="email" placeholder="johndoe@gmail.com" required)
-            div.mb-3
-              label.form-label(for="message") Message
-              textarea#message.form-control(rows="4" required)
-            button.btn.btn-primary.btn-lg.px-3(type="button") Send
     footer.container.pt-5
       div.row
         hr
         div.col.d-flex.justify-content-between
           p Contact: tippet2@pdx.edu
           p © 2020 Jordan Tippetts
+
+    div#contactModal.modal.fade(tabindex="-1")
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+          div.modal-body
+            iframe.w-100(src="https://docs.google.com/forms/d/e/1FAIpQLSeUWkIvdenJJn2GH_P2qu_z7--eyDqsag9kRBDw9gsjiYXKJA/viewform?embedded=true" height="675" frameborder="0" marginheight="0" marginwidth="0") Loading…
+          div.modal-footer
+            button.btn.btn-primary(type="button" data-bs-dismiss="modal") Close
 
 </template>
 
@@ -156,7 +153,7 @@ export default {
 
 #display-name {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 150px;
+  @include font-size(150px);
 }
 
 main {
