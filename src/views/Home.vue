@@ -21,12 +21,21 @@
         div.col
           h3.fw-bold Programming Toolbox
           hr
-      div.row(v-for="tool in programingToolBox")
-        div.col-2
-          p {{tool.name}}
-        div.col-10
-          div.progress(style="height: 25px")
-            div.progress-bar.progress-bar-striped.progress-bar-animated(v-bind:style="{width: tool.progressBarWidth + '%'}", v-bind:class="progressBarColor(tool.progressBarWidth)")
+      div.row
+        div.col
+          div#toolBoxAccordion.accordion.accordion-flush
+            div.accordion-item(v-for="(category, index) in programingToolBox")
+              h2.accordion-header
+                button.accordion-button.border-primary(type="button" data-bs-toggle="collapse" v-bind:data-bs-target="'#category-collapse-' + index" v-bind:class="{collapsed: index !== 0}")
+                  h4 {{category.title}}
+              div.accordion-collapse.collapse(v-bind:id="'category-collapse-' + index" data-bs-parent="#toolBoxAccordion" v-bind:class="{show: index === 0}")
+                div.accordion-body
+                  div.row(v-for="tool in category.tools")
+                    div.col-3.col-sm-2
+                      p {{tool.name}}
+                    div.col-9.col-sm-10
+                      div.progress(style="height: 25px")
+                        div.progress-bar.progress-bar-striped.progress-bar-animated(v-bind:style="{width: tool.progressBarWidth + '%'}", v-bind:class="progressBarColor(tool.progressBarWidth)")
     section.container.pt-5
       h2#projects.fw-bold Recent Projects
       hr
@@ -71,52 +80,75 @@ export default {
           " outdoors.",
       programingToolBox: [
         {
-          name: "Java",
-          progressBarWidth: 85
+          title: "Backend Languages",
+          tools: [
+            {
+              name: "Java",
+              progressBarWidth: 90
+            },
+            {
+              name: "C++",
+              progressBarWidth: 75
+            },
+            {
+              name: "C",
+              progressBarWidth: 60
+            },
+            {
+              name: "Python",
+              progressBarWidth: 80
+            }
+          ]
         },
         {
-          name: "C++",
-          progressBarWidth: 80
+          title: "Frontend Languages",
+          tools: [
+            {
+              name: "Javascript",
+              progressBarWidth: 80
+            },
+            {
+              name: "HTML5",
+              progressBarWidth: 100
+            },
+            {
+              name: "CSS3",
+              progressBarWidth: 100
+            },
+            {
+              name: "VueJs",
+              progressBarWidth: 70
+            },
+            {
+              name: "typescript",
+              progressBarWidth: 40
+            }
+          ]
         },
         {
-          name: "HTML5",
-          progressBarWidth: 100
-        },
-        {
-          name: "CSS3",
-          progressBarWidth: 100
-        },
-        {
-          name: "Javascript",
-          progressBarWidth: 75
-        },
-        {
-          name: "VueJs",
-          progressBarWidth: 70
-        },
-        {
-          name: "SASS",
-          progressBarWidth: 100
-        },
-        {
-          name: "Pug",
-          progressBarWidth: 55
-        },
-        {
-          name: "Google Firebase",
-          progressBarWidth: 60
-        },
-        {
-          name: "Spring Boot",
-          progressBarWidth: 70
-        },
-        {
-          name: "node.js",
-          progressBarWidth: 70
-        },
-        {
-          name: "typescript",
-          progressBarWidth: 40
+          title: "Web DevelopmentTools",
+          tools: [
+            {
+              name: "SASS",
+              progressBarWidth: 100
+            },
+            {
+              name: "Pug",
+              progressBarWidth: 60
+            },
+            {
+              name: "Google Firebase",
+              progressBarWidth: 80
+            },
+            {
+              name: "Spring Boot",
+              progressBarWidth: 70
+            },
+            {
+              name: "node.js",
+              progressBarWidth: 75
+            },
+          ]
         }
       ],
       recentProjects: [
