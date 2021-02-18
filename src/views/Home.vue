@@ -3,7 +3,7 @@
     div.d-flex.justify-content-center.navbar.container-fluid
       a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#about") about
       a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#projects") projects
-      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(data-bs-toggle="modal" data-bs-target="#contactModal") contact
+      button.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(data-bs-toggle="modal" data-bs-target="#contactModal") contact
       a.btn.btn-lg.btn-secondary.wiggle-horizontally.px-4.m-4(href="./Jordan_Tippetts_Resume.pdf" target="_blank" rel="noopener") Resume
     main.container.pt-5
       div.row.h-100
