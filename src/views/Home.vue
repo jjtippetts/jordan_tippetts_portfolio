@@ -60,7 +60,6 @@
 
 <script>
 
-
 export default {
   data: function () {
     return {
@@ -68,9 +67,17 @@ export default {
       aboutDescription: "Hi. I'm a Masters in Computer Science student at Portland State University. I'm interested in Software" +
           " Development, Automation, Cloud Systems, and Database Management Systems. I'm currently working as the End User Support" +
           " Lead in the IT Department at Portland State. I also develop websites using the latest technology in my" +
-          " free time time. I few of the things I enjoy are find ways to automate tasks, xkcd comics, and spending time in the" +
+          " free time time. I few of the things I enjoy are automating boring tasks, xkcd comics, and spending time in the" +
           " outdoors.",
       programingToolBox: [
+        {
+          name: "Java",
+          progressBarWidth: 85
+        },
+        {
+          name: "C++",
+          progressBarWidth: 80
+        },
         {
           name: "HTML5",
           progressBarWidth: 100
@@ -80,16 +87,12 @@ export default {
           progressBarWidth: 100
         },
         {
-          name: "Java",
-          progressBarWidth: 85
-        },
-        {
           name: "Javascript",
           progressBarWidth: 75
         },
         {
           name: "VueJs",
-          progressBarWidth: 60
+          progressBarWidth: 70
         },
         {
           name: "SASS",
@@ -110,6 +113,10 @@ export default {
         {
           name: "node.js",
           progressBarWidth: 70
+        },
+        {
+          name: "typescript",
+          progressBarWidth: 40
         }
       ],
       recentProjects: [
@@ -151,13 +158,12 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 
-#display-name {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  @include font-size(150px);
-}
-
 main {
   height: 60vh;
+  #display-name {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    @include font-size(150px);
+  }
 }
 
 @keyframes wiggle {
