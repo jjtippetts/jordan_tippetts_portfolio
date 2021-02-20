@@ -116,7 +116,7 @@ export default {
               progressBarWidth: 100
             },
             {
-              name: "VueJs",
+              name: "Vue",
               progressBarWidth: 70
             },
             {
@@ -147,7 +147,32 @@ export default {
             {
               name: "node.js",
               progressBarWidth: 75
+            }
+          ]
+        },
+        {
+          title: "Databases",
+          tools: [
+            {
+              name: "Postgresql",
+              progressBarWidth: 90
             },
+            {
+              name: "Google Firestore",
+              progressBarWidth: 80
+            },
+            {
+              name: "Google BigQuery",
+              progressBarWidth: 70
+            },
+            {
+              name: "Sqlite",
+              progressBarWidth: 75
+            },
+            {
+              name: "JPA",
+              progressBarWidth: 60
+            }
           ]
         }
       ],
