@@ -73,10 +73,10 @@ export default {
   data: function () {
     return {
       name: 'Jordan Tippetts',
-      aboutDescription: "Hi. I'm a Masters in Computer Science student at Portland State University. I'm interested in Software" +
-          " Development, Automation, Cloud Systems, and Database Management Systems. I'm currently working as the End User Support" +
-          " Lead in the IT Department at Portland State. I also develop websites using the latest technology in my" +
-          " free time time. I few of the things I enjoy are automating boring tasks, xkcd comics, and spending time in the" +
+      aboutDescription: "Hi. I'm a Full Stack Developer and recent Masters degree graduate in Computer Science at Portland State University. I'm interested in Web and Software" +
+          " Development, Automation, Cloud Systems, and Database Management Systems. I'm currently working as a Full Stack Developer" +
+          " at Golf Team Products. I also develop websites using the latest technology in my" +
+          " free time. I few of the things I enjoy are automating boring repetitive tasks, xkcd comics, Tennis, and spending time in the" +
           " outdoors.",
       programingToolBox: [
         {
@@ -96,7 +96,7 @@ export default {
             },
             {
               name: "Python",
-              progressBarWidth: 80
+              progressBarWidth: 90
             }
           ]
         },
@@ -105,7 +105,7 @@ export default {
           tools: [
             {
               name: "Javascript",
-              progressBarWidth: 80
+              progressBarWidth: 85
             },
             {
               name: "HTML5",
@@ -117,7 +117,7 @@ export default {
             },
             {
               name: "Vue",
-              progressBarWidth: 70
+              progressBarWidth: 90
             },
             {
               name: "typescript",
@@ -134,7 +134,7 @@ export default {
             },
             {
               name: "Pug",
-              progressBarWidth: 60
+              progressBarWidth: 80
             },
             {
               name: "Google Firebase",
@@ -156,6 +156,10 @@ export default {
             {
               name: "Postgresql",
               progressBarWidth: 90
+            },
+            {
+              name: "Microsoft Sql",
+              progressBarWidth: 95
             },
             {
               name: "Google Firestore",
