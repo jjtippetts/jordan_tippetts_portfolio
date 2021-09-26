@@ -52,7 +52,7 @@
       div.row
         hr
         div.col.d-flex.justify-content-between
-          p Contact: tippet2@pdx.edu
+          p Contact: jjtippetts@gmail.com
           p © 2020 Jordan Tippetts
 
     div#contactModal.modal.fade(tabindex="-1")
@@ -182,9 +182,14 @@ export default {
       ],
       recentProjects: [
         {
+          header: "Web Scaping",
+          title: "Product Inventory Web Scraper",
+          description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased customer satisfaction and sales."
+        },
+        {
           header: "Web Development",
           title: "Nature Tech Landscape Services",
-          description: "Fully custome website for a local company. Built using HTML, CSS, SASS, PHP, and Bootstrap",
+          description: "Fully custom website for a local company. Built using HTML, CSS, SASS, PHP, and Bootstrap",
           url: "http://naturetechlandscapeservices.com/"
         },
         {

@@ -20,5 +20,11 @@ npm run build
 npm run lint
 ```
 
+### Deploy to Firebase
+Make sure to run "npm run build" before.
+```
+firebase deploy
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
