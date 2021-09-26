@@ -182,6 +182,11 @@ export default {
       ],
       recentProjects: [
         {
+          header: "Cloud Services",
+          title: "Custom Golf Express",
+          description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and an new website"
+        },
+        {
           header: "Web Scaping",
           title: "Product Inventory Web Scraper",
           description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased customer satisfaction and sales."
