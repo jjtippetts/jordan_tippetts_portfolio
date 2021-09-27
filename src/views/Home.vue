@@ -53,7 +53,7 @@
         hr
         div.col.d-flex.justify-content-between
           p Contact: jjtippetts@gmail.com
-          p © 2020 Jordan Tippetts
+          p © 2021 Jordan Tippetts
 
     div#contactModal.modal.fade(tabindex="-1")
       div.modal-dialog
