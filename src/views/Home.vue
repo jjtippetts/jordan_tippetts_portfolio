@@ -73,15 +73,17 @@ export default {
   data: function () {
     return {
       name: 'Jordan Tippetts',
-      aboutDescription: "Hi. I'm a Full Stack Developer and recent Masters degree graduate in Computer Science at Portland State University. I'm interested in Web and Software" +
-          " Development, Automation, Cloud Systems, and Database Management Systems. I'm currently working as a Full Stack Developer" +
-          " at Golf Team Products. I also develop websites using the latest technology in my" +
-          " free time. I few of the things I enjoy are automating boring repetitive tasks, xkcd comics, Tennis, and spending time in the" +
-          " outdoors.",
+      aboutDescription: "Hi. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
+          "My current interests include developing projects in the cloud, working on the backend code, and creating ways to automate repetitive tasks. I currently work as a software developer" +
+          " at an ecommerce company. I also enjoy developing websites using the latest technology in my free time.",
       programingToolBox: [
         {
           title: "Backend",
           tools: [
+            {
+              name: "Python",
+              progressBarWidth: 90
+            },
             {
               name: "Java",
               progressBarWidth: 90
@@ -93,10 +95,6 @@ export default {
             {
               name: "C",
               progressBarWidth: 70
-            },
-            {
-              name: "Python",
-              progressBarWidth: 90
             },
             {
               name: "Google Firebase",
