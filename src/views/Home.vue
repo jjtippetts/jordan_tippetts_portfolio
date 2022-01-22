@@ -80,7 +80,7 @@ export default {
           " outdoors.",
       programingToolBox: [
         {
-          title: "Backend Languages",
+          title: "Backend",
           tools: [
             {
               name: "Java",
@@ -88,20 +88,32 @@ export default {
             },
             {
               name: "C++",
-              progressBarWidth: 75
+              progressBarWidth: 80
             },
             {
               name: "C",
-              progressBarWidth: 60
+              progressBarWidth: 70
             },
             {
               name: "Python",
               progressBarWidth: 90
+            },
+            {
+              name: "Google Firebase",
+              progressBarWidth: 80
+            },
+            {
+              name: "Spring Boot",
+              progressBarWidth: 70
+            },
+            {
+              name: "node.js",
+              progressBarWidth: 75
             }
           ]
         },
         {
-          title: "Frontend Languages",
+          title: "Frontend",
           tools: [
             {
               name: "Javascript",
@@ -120,14 +132,9 @@ export default {
               progressBarWidth: 90
             },
             {
-              name: "typescript",
+              name: "Typescript",
               progressBarWidth: 40
-            }
-          ]
-        },
-        {
-          title: "Web DevelopmentTools",
-          tools: [
+            },
             {
               name: "SASS",
               progressBarWidth: 100
@@ -135,18 +142,19 @@ export default {
             {
               name: "Pug",
               progressBarWidth: 80
+            }
+          ]
+        },
+        {
+          title: "Cloud Services",
+          tools: [
+            {
+              name: "Amazon Web Services (AWS)",
+              progressbarwidth: 80
             },
             {
-              name: "Google Firebase",
-              progressBarWidth: 80
-            },
-            {
-              name: "Spring Boot",
-              progressBarWidth: 70
-            },
-            {
-              name: "node.js",
-              progressBarWidth: 75
+              name: "Google Cloud Platform (GCP)",
+              progressbarwidth: 75
             }
           ]
         },
@@ -191,12 +199,12 @@ export default {
           title: "Product Inventory Web Scraper",
           description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased customer satisfaction and sales."
         },
-        {
-          header: "Web Development",
-          title: "Nature Tech Landscape Services",
-          description: "Fully custom website for a local company. Built using HTML, CSS, SASS, PHP, and Bootstrap",
-          url: "http://naturetechlandscapeservices.com/"
-        },
+        // {
+        //   header: "Web Development",
+        //   title: "Nature Tech Landscape Services",
+        //   description: "Fully custom website for a local company. Built using HTML, CSS, SASS, PHP, and Bootstrap",
+        //   url: "http://naturetechlandscapeservices.com/"
+        // },
         {
           header: "Web Development",
           title: "Smart Living",
