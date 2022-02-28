@@ -74,15 +74,16 @@ export default {
     return {
       name: 'Jordan Tippetts',
       aboutDescription: "Hi. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
-          "My current interests include developing projects in the cloud, working on the backend code, and creating ways to automate repetitive tasks. I currently work as a software developer" +
-          " at an ecommerce company. I also enjoy developing websites using the latest technology in my free time.",
+          "I currently work as a Full Stack developer at an ecommerce company where I develop and maintain web and software applications. " +
+          "I frequently work on both frontend and backend code, sql databases, and cloud applications. I also enjoy using python to automate tasks, " +
+          "increase performance, and reduce user errors.",
       programingToolBox: [
         {
           title: "Backend",
           tools: [
             {
               name: "Python",
-              progressBarWidth: 90
+              progressBarWidth: 95
             },
             {
               name: "Java",
@@ -106,7 +107,7 @@ export default {
             },
             {
               name: "node.js",
-              progressBarWidth: 75
+              progressBarWidth: 80
             }
           ]
         },
@@ -131,7 +132,7 @@ export default {
             },
             {
               name: "Typescript",
-              progressBarWidth: 40
+              progressBarWidth: 70
             },
             {
               name: "SASS",
@@ -148,7 +149,7 @@ export default {
           tools: [
             {
               name: "Amazon Web Services (AWS)",
-              progressbarwidth: 80
+              progressbarwidth: 85
             },
             {
               name: "Google Cloud Platform (GCP)",
@@ -190,7 +191,8 @@ export default {
         {
           header: "Cloud Services",
           title: "Custom Golf Express",
-          description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and an new website"
+          description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and an new website",
+          url: "https://customgolfexpress.com"
         },
         {
           header: "Web Scaping",
