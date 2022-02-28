@@ -76,7 +76,7 @@ export default {
       aboutDescription: "Hi. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
           "I currently work as a Full Stack developer at an ecommerce company where I develop and maintain web and software applications. " +
           "I frequently work on both frontend and backend code, sql databases, and cloud applications. I also enjoy using python to automate tasks, " +
-          "increase performance, and reduce user errors.",
+          "increase efficiency, and reduce user errors.",
       programingToolBox: [
         {
           title: "Backend",
