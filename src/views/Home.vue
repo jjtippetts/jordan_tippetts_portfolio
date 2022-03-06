@@ -148,12 +148,12 @@ export default {
           title: "Cloud Services",
           tools: [
             {
-              name: "Amazon Web Services (AWS)",
-              progressbarwidth: 85
+              name: "Amazon Web Services",
+              progressbarWidth: 85
             },
             {
-              name: "Google Cloud Platform (GCP)",
-              progressbarwidth: 75
+              name: "Google Cloud Platform",
+              progressbarWidth: 75
             }
           ]
         },
