@@ -149,11 +149,11 @@ export default {
           tools: [
             {
               name: "Amazon Web Services",
-              progressbarWidth: 85
+              progressBarWidth: 85
             },
             {
               name: "Google Cloud Platform",
-              progressbarWidth: 75
+              progressBarWidth: 75
             }
           ]
         },
