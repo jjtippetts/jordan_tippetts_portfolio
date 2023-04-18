@@ -46,14 +46,14 @@
             div.card-body
               h5.card-title {{project.title}}
               p.card-text {{project.description}}
-              a.btn.btn-primary.px-5(v-bind:href="project.url" target="_blank" rel="noopener") Visit
+              a.btn.btn-primary.px-5(v-if="project.url != ''" v-bind:href="project.url" target="_blank" rel="noopener") Visit
 
     footer.container.pt-5
       div.row
         hr
         div.col.d-flex.justify-content-between
           p Contact: jjtippetts@gmail.com
-          p © 2021 Jordan Tippetts
+          p © 2023 Jordan Tippetts
 
     div#contactModal.modal.fade(tabindex="-1")
       div.modal-dialog
@@ -73,10 +73,11 @@ export default {
   data: function () {
     return {
       name: 'Jordan Tippetts',
-      aboutDescription: "Hi. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
-          "I currently work as a Full Stack developer at an ecommerce company where I develop and maintain web and software applications. " +
-          "I frequently work on both frontend and backend code, sql databases, and cloud applications. I also enjoy using python to automate tasks, " +
-          "increase efficiency, and reduce user errors.",
+      aboutDescription: "Hi there. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
+          "I have a passion for creating innovative software solutions and am constantly exploring new technologies to enhance my skills. I currently " + 
+          " work as a Full Stack developer at an ecommerce company, where I have had the opportunity to develop and maintain several web and software " + 
+          "applications. When I'm not coding, I love to spend time outdoors and playing sports. As an avid tennis player, I enjoy the complexity and" +
+          "challenge of the game as well as teaching others how to play. I'm also an experienced canyoner, and have led many trips in the Multnomah Gorge.",
       programingToolBox: [
         {
           title: "Backend",
@@ -94,12 +95,28 @@ export default {
               progressBarWidth: 80
             },
             {
+              name: "C#",
+              progressBarWidth: 75
+            },
+            {
               name: "C",
               progressBarWidth: 70
             },
             {
+              name: "Visual Basic",
+              progressBarWidth: 60
+            },
+            {
+              name: "graphql",
+              progressBarWidth: 85
+            }, 
+            {
+              name: "REST",
+              progressBarWidth: 90
+            },
+            {
               name: "Google Firebase",
-              progressBarWidth: 80
+              progressBarWidth: 85
             },
             {
               name: "Spring Boot",
@@ -108,7 +125,7 @@ export default {
             {
               name: "node.js",
               progressBarWidth: 80
-            }
+            },
           ]
         },
         {
@@ -116,7 +133,7 @@ export default {
           tools: [
             {
               name: "Javascript",
-              progressBarWidth: 85
+              progressBarWidth: 90
             },
             {
               name: "HTML5",
@@ -129,6 +146,10 @@ export default {
             {
               name: "Vue",
               progressBarWidth: 90
+            },
+            {
+              name: "React",
+              progressBarWidth: 80
             },
             {
               name: "Typescript",
@@ -153,7 +174,11 @@ export default {
             },
             {
               name: "Google Cloud Platform",
-              progressBarWidth: 75
+              progressBarWidth: 80
+            },
+            {
+              name: "Microsoft Azure",
+              progressBarWidth: 70
             }
           ]
         },
@@ -189,28 +214,29 @@ export default {
       ],
       recentProjects: [
         {
-          header: "Cloud Services",
+          header: "Web Development",
+          title: "15 Minute HITT",
+          description: "I got tired of coming up with the same HITT workouts, so I developed a website using Vue and Google Firebase to generate random exercises. Includes the ability to filter exercises by muscle group.",
+          url: "https://fifteen-minute-hit.web.app/"
+        },
+        {
+          header: "Full Stack Development",
+          title: "Golf Team Products",
+          description: "Led the site migration and development of a B2B ecommerce company to Shopify Plus. Worked with design, production, and management to meet the unique requirements of the business.",
+          url: "https://golfteamproducts.com"
+        },
+        {
+          header: "Cloud Services/Web Development",
           title: "Custom Golf Express",
-          description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and an new website",
+          description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and a new ecommerce website",
           url: "https://customgolfexpress.com"
         },
         {
-          header: "Web Scaping",
+          header: "Web Scaper",
           title: "Product Inventory Web Scraper",
-          description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased customer satisfaction and sales."
+          description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased the number of products that could be sold.",
+          url: ""
         },
-        // {
-        //   header: "Web Development",
-        //   title: "Nature Tech Landscape Services",
-        //   description: "Fully custom website for a local company. Built using HTML, CSS, SASS, PHP, and Bootstrap",
-        //   url: "http://naturetechlandscapeservices.com/"
-        // },
-        {
-          header: "Web Development",
-          title: "Smart Living",
-          description: "Full Stack Project for developing diet plans. Uses Spring Ecosystem, H2 database, JPA, and Bootstrap",
-          url: "https://smart-living.herokuapp.com/"
-        }
       ]
     }
   },
