@@ -1,15 +1,15 @@
 <template lang="pug">
   div.h-100
     div.d-flex.justify-content-center.navbar.container-fluid
-      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#about") about
-      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#projects") projects
-      button.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(data-bs-toggle="modal" data-bs-target="#contactModal") contact
+      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#about") About
+      a.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(href="#projects") Projects
+      button.btn.btn-lg.btn-outline-primary.wiggle.nav-item.px-4.m-3(data-bs-toggle="modal" data-bs-target="#contactModal") Contact
       a.btn.btn-lg.btn-secondary.wiggle-horizontally.px-4.m-4(href="./Jordan_Tippetts_Resume.pdf" target="_blank" rel="noopener") Resume
     main.container.pt-5
       div.row.h-100
         div.col.h-100.d-flex.flex-column.align-content-center.justify-content-center
           h1#display-name.display-1.text-center {{name}}
-          p.lead.text-center Programmer & Developer
+          p.lead.text-center Software Developer
     section.container.pt-5
       div.row
         div.col
@@ -75,9 +75,9 @@ export default {
       name: 'Jordan Tippetts',
       aboutDescription: "Hi there. I am a Software Developer and recent Masters degree graduate in Computer Science at Portland State University. "+
           "I have a passion for creating innovative software solutions and am constantly exploring new technologies to enhance my skills. I currently " + 
-          " work as a Full Stack developer at an ecommerce company, where I have had the opportunity to develop and maintain several web and software " + 
-          "applications. When I'm not coding, I love to spend time outdoors and playing sports. As an avid tennis player, I enjoy the complexity and" +
-          "challenge of the game as well as teaching others how to play. I'm also an experienced canyoner, and have led many trips in the Multnomah Gorge.",
+          "work as a Full Stack developer at an ecommerce company, where I have had the opportunity to develop and maintain several web and software " + 
+          "applications. When I'm not coding, I love to spend time outdoors and playing sports. As an avid tennis player, I enjoy the complexity and " +
+          "challenge of the game as well as the opportunity to teach others how to play. I'm also an experienced canyoner and have led many trips in the Multnomah Gorge.",
       programingToolBox: [
         {
           title: "Backend",
@@ -230,12 +230,6 @@ export default {
           title: "Custom Golf Express",
           description: "Developed middleware using AWS Lambda and Gateway to communicate between an old legacy order management system and a new ecommerce website",
           url: "https://customgolfexpress.com"
-        },
-        {
-          header: "Web Scaper",
-          title: "Product Inventory Web Scraper",
-          description: "Developed a Web Scraper to scrape inventory from a main supplier. Allowed company to sell products not currently in stock which increased the number of products that could be sold.",
-          url: ""
         },
       ]
     }
